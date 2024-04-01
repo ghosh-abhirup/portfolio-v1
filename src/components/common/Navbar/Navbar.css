@@ -1,0 +1,19 @@
+.navlinks {
+    @apply font-bold text-[14px] tracking-[0.25em] cursor-pointer text-center relative;
+}
+
+.logoSvg {
+    @apply w-[28px] h-[28px]
+}
+
+.bottomBorderOnHover {
+    @apply w-0 h-[1px] transition-all ease-in absolute -bottom-2 left-1/2 -translate-x-1/2 customGradient
+}
+
+.customGradient {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, hsl(var(--text-color)) 40%, hsl(var(--text-color)) 50%, hsl(var(--text-color)) 60%, rgba(0, 212, 255, 0) 100%);
+}
+
+.bottomBorderOnHover.expanded {
+    @apply w-full
+}
