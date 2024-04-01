@@ -3,6 +3,8 @@ import "./Navbar.css";
 import { AppContext } from "../../../context/AppContext";
 import Navlink from "./Navlink";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const { theme } = useContext(AppContext);
@@ -38,13 +40,15 @@ const Navbar = () => {
         />
       </svg>
 
-      <div className="flex items-center gap-[30px]">
+      <div className="items-center gap-[30px] hidden laptop:flex">
         <Navlink page="about" title={"ABOUT"} />
         <Navlink page="works" title={"WORKS"} />
         <Navlink page="experience" title={"EXPERIENCE"} />
         <Navlink page="contact" title={"CONTACT"} />
       </div>
-      <div></div>
+      <div>
+        <FontAwesomeIcon icon={faBars} className="w-6 h-6 laptop:hidden" />
+      </div>
     </div>
   );
 };
