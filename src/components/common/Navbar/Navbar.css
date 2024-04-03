@@ -3,7 +3,7 @@
 }
 
 .logoSvg {
-    @apply w-[28px] h-[28px]
+    @apply w-[24px] h-[24px] cursor-pointer
 }
 
 .bottomBorderOnHover {

@@ -19,14 +19,14 @@ const IconLink = ({ title, icon, link }) => {
         <p
           className={`${
             isHovered ? "-translate-y-[50px]" : ""
-          } transition-all ease-out duration-500`}
+          } transition-all ease-out duration-700`}
         >
           {title}
         </p>
         <p
           className={`${
             isHovered ? "bottom-0" : "-bottom-[50px]"
-          } absolute left-0 transition-all ease-out duration-500`}
+          } absolute left-0 transition-all ease-out duration-700`}
         >
           {title}
         </p>
